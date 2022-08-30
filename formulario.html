@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Formulário - PWEB</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Formulário - PWEB</title>
 </head>
 
 <body>
@@ -14,34 +16,34 @@
         <p>Preencha seus dados: </p>
     </div>
 
-    <form action="">
+    <form>
         <fieldset>
             <!-- DADOS PESSOAIS -->
             <fieldset>
-                <div>
+                <div class="dados">
                     <div>
                         <label>Full Name</label>
-                        <input type="text" name="nome" id="nome">
+                        <input class="campo" type="text" name="nome" id="nome">
                         <br>
                     </div>
                     <div>
                         <label>Biography</label>
-                        <input type="text" name="biografia" id="bio">
+                        <input class="campo" type="text" name="biografia" id="bio">
                         <br>
                     </div>
                     <div>
                         <label>Planet</label>
-                        <input type="text" name="planeta" id="planeta">
+                        <input class="campo" type="text" name="planeta" id="planeta">
                         <br>
                     </div>
                     <div>
                         <label>Coupon</label>
-                        <input type="">
+                        <input class="campo" type="">
                         <br>
                     </div>
                     <div>
                         <label>Profile Image</label>
-                        <input type="file" name="imagem" id="imagem">
+                        <input class="campo" type="file" name="imagem" id="imagem">
                     </div>
                 </div>
             </fieldset>
@@ -50,11 +52,12 @@
             <fieldset> Gender
                 <div>
                     <label>
-                        <input type="radio" name="male" value="homem">Male
+                        <input class="bolinha" type="radio" name="male" value="homem">Male
                     </label>
                 </div>
                 <div>
-                        <input type="radio" name="female" value="mulher">Female
+                    <label>
+                        <input class="bolinha" type="radio" name="female" value="mulher">Female
                     </label>
                 </div>
             </fieldset>
@@ -98,6 +101,27 @@
             </div>
 
             <div>
+                <label>Idol</label>
+                    <select multiple size="3">
+                        <option>Michael Jackson</option>
+                        <option>Lady Gaga</option>
+                        <option>Rihanna</option>
+                        <option>Elvis Presley</option>
+                    </select>
+            </div>
+
+            <div>
+                <label>Interests</label>
+                    <select multiple name="interesses" id="interesses">
+                        <option>Cinemas</option>
+                        <option>Readings</option>
+                        <option>Operas</option>
+                        <option>Theaters</option>
+                        <option>Beach</option>
+                    </select>
+            </div>
+            
+            <div>
                 <label>Favourit Car</label>
                     <select name="carro" id="carro">
                         <option>Chevrolet</option>
@@ -111,10 +135,36 @@
             </div>
 
             <div>
+                <label>Favourite Dish</label>
+                    <select multiple name="comida_fav" id="comida_fav">
+                        <option>Salada</option>
+                        <option>Strogonoff</option>
+                        <option>Macarronada</option>
+                        <option>Lasanha</option>
+                    </select>
+            </div>
+
+            <div>
+                <label>Public Transports</label>
+                    <select multiple name="tranporte" id="transporte">
+                        <option>Train</option>
+                        <option>Bus</option>
+                        <option>Car</option>
+                        <option>Motorcycle</option>
+                        <option>Bike</option>
+                    </select>
+            </div>
+
+
+            <div>
                 <label>
                     <input type="checkbox" name="termos" id="termos"> I accept the terms and conditions
                 </label>
             </div>
+
+            <button>Register</button>
+            <br>
+            <button disabled>Cancel</button>
 
         </fieldset>
 

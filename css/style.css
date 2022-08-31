@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1 h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+}
+
+/* .contaier-fluid {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+} */
+
+#dados {
+    background-color: red;
+}
+
+option {
+    margin: auto ;
+}
+
+.titulo_campo {
+    padding-right: 5%;
+}
+
+#titulo_favorite_dish {
+    background-color: lightgray;
+    color: black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
